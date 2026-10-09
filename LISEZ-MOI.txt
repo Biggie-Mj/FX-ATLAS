@@ -1,0 +1,39 @@
+ATLAS FX — Générateur de transitions fantastiques pour iPhone
+============================================================
+
+Aucun compte, aucun abonnement, aucun serveur requis pour générer des effets.
+
+UTILISATION SUR IPHONE — MÉTHODE RECOMMANDÉE (GitHub Pages)
+1. Créer un nouveau dépôt GitHub (ex. atlas-fx).
+2. Placer les fichiers index.html, manifest.webmanifest, icon.svg et sw.js directement à la racine.
+3. Aller dans Settings > Pages > Deploy from a branch, choisir main et / (root), puis Save.
+4. Attendre la publication. Ouvrir dans Safari l'adresse : https://IDENTIFIANT.github.io/atlas-fx/
+5. Dans Safari, toucher Partager > Sur l'écran d'accueil > Ajouter.
+6. L'application peut ensuite s'ouvrir depuis l'écran d'accueil ; elle fonctionne hors connexion après la première installation/visite mise en cache.
+
+MODE FICHIER UNIQUE
+Le fichier index.html contient toute l'interface et le moteur de rendu, sans librairies externes.
+Sur ordinateur, on peut l'ouvrir directement avec un navigateur. Sur iPhone, son utilisation est plus fiable depuis une page HTTPS dans Safari : les fonctionnalités d'enregistrement et de partage peuvent être limitées depuis l'aperçu Fichiers ou un navigateur intégré.
+
+EXPORT
+- Par défaut : MP4/H.264 si le navigateur déclare ce format compatible (Safari iOS récent).
+- Sinon : WebM si disponible. L'extension reste fidèle au vrai format : ne pas renommer un WebM en MP4.
+- L'enregistrement s'effectue en temps réel : 10 secondes de vidéo nécessitent environ 10 secondes d'enregistrement, plus la finalisation.
+- Garder Safari ouvert au premier plan pendant l'export. Éviter de verrouiller l'iPhone.
+- Après export : Partager / Fichiers pour enregistrer le MP4 depuis la feuille de partage iOS, ou Télécharger.
+- 720p / 30 ips est le réglage conseillé. Si échec : essayer 480p.
+- Vidéo silencieuse, sans filigrane ; fond sombre, à importer comme transition dans Atlas.
+- Boucle : les trajectoires de l'animation ont une période égale à la durée choisie.
+
+EFFETS INCLUS
+Braises écarlates, Fumée spectrale, Portail arcanique, Pluie d’étincelles,
+Brume glaciale, Faille infernale, Poussière antique, Tempête mystique.
+
+COMMANDES
+Densité, vitesse, taille, lumière, couleur, fond, turbulence, opacité.
+Durée (3 à 30 s), paysage 16:9 / portrait 9:16 / carré, 480p/720p/1080p, 24/30 ips.
+Sauvegarder un effet personnel (stocké sur l'appareil), importer/exporter réglages JSON.
+Appui long sur un effet personnel pour le supprimer.
+
+IMPORTANT
+Le code est autonome et est fourni sans garantie de compatibilité exhaustive avec tous les modèles d'iPhone ; Safari et la mémoire disponible peuvent influer sur l'export vidéo. Une vérification réelle sur un iPhone est recommandée.
